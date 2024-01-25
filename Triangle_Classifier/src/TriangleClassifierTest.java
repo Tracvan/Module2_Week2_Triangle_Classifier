@@ -31,5 +31,12 @@ public class TriangleClassifierTest {
 
         assertEquals(expected,result);
     }
+    @Test
+    public void testAIsNegative1BIs2CIs1(){
+        String expected = "Không phải tam giác";
+        String result = TriangleClassifier.triangleCheck(-1,2,1);
+
+        assertEquals(expected,result);
+    }
 
 }
