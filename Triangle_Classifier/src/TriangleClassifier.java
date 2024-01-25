@@ -5,7 +5,9 @@ public class TriangleClassifier {
             result = "Tam giác đều";
         } else if (a == b || a == c || b == c) {
             result = "Tam giác cân";
-        }else {
+        } else if (a > b+c || b > a+c || c > a+b) {
+            result = "Không phải tam giác";
+        } else {
             result = "Tam giác thường";
         }
         return result;

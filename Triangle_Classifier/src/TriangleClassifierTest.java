@@ -24,5 +24,12 @@ public class TriangleClassifierTest {
 
         assertEquals(expected,result);
     }
+    @Test
+    public void testAIs8BIs2CIs3(){
+        String expected = "Không phải tam giác";
+        String result = TriangleClassifier.triangleCheck(8,2,3);
+
+        assertEquals(expected,result);
+    }
 
 }
