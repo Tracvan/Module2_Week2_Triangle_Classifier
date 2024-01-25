@@ -5,6 +5,8 @@ public class TriangleClassifier {
             result = "Tam giác đều";
         } else if (a == b || a == c || b == c) {
             result = "Tam giác cân";
+        }else {
+            result = "Tam giác thường";
         }
         return result;
     }
